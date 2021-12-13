@@ -17,21 +17,19 @@ y = [29.7, 29.7, 29.7, 29.7, 27.7, 23.6, 15.2,  6.7,  2.9,  0.7,
 connections = [11, 16, 9, 4, 3, 12, 17, 10, 15, 2, 7, 0, 5, 14, 13, 8, 1, 6]
 start = 17
 
-num = len(x)
-grid = []
-
-for i in range(num):
-    line = []
-    for j in range(num):
-        dist = math.sqrt((x[i] - x[j])**2 + (y[i] - y[j])**2)
-        line.append(round(dist, 2))
-    grid.append(line)
 
 
-# exporting to tsv
+# exporting table of distances to tsv
+# grid = []
+# for i in range(len(x)):
+    # line = []
+    # for j in range(len(x)):
+        # dist = math.sqrt((x[i] - x[j])**2 + (y[i] - y[j])**2)
+        # line.append(round(dist, 2))
+    # grid.append(line)
 # with open('output.tsv', 'w') as tsvfile:
     # writer = csv.writer(tsvfile, delimiter='\t')
-    # for i in range(num):
+    # for i in range(len(x)):
         # writer.writerow(grid[i])
 
 
